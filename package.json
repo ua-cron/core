@@ -12,7 +12,7 @@
     "url": "https://github.com/ua-cron/core/issues"
   },
   "scripts": {
-    "build": "npm run clean && tsc",
+    "build": "npm run clean && tsc && node prepare-package.mjs",
     "clean": "rm -rf dist",
     "test-debug": "node --inspect-brk node_modules/.bin/jest --runInBand",
     "test": "jest",
